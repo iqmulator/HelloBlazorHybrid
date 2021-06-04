@@ -1,0 +1,15 @@
+D:\NET\Fusion\HelloBlazorHybrid\Services\bin\Debug\net5.0\HelloBlazorHybrid.Services.deps.json
+D:\NET\Fusion\HelloBlazorHybrid\Services\bin\Debug\net5.0\HelloBlazorHybrid.Services.dll
+D:\NET\Fusion\HelloBlazorHybrid\Services\bin\Debug\net5.0\ref\HelloBlazorHybrid.Services.dll
+D:\NET\Fusion\HelloBlazorHybrid\Services\bin\Debug\net5.0\HelloBlazorHybrid.Services.pdb
+D:\NET\Fusion\HelloBlazorHybrid\Services\bin\Debug\net5.0\HelloBlazorHybrid.Abstractions.dll
+D:\NET\Fusion\HelloBlazorHybrid\Services\bin\Debug\net5.0\HelloBlazorHybrid.Abstractions.pdb
+D:\NET\Fusion\HelloBlazorHybrid\Services\obj\Debug\net5.0\Services.csprojAssemblyReference.cache
+D:\NET\Fusion\HelloBlazorHybrid\Services\obj\Debug\net5.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\NET\Fusion\HelloBlazorHybrid\Services\obj\Debug\net5.0\Services.AssemblyInfoInputs.cache
+D:\NET\Fusion\HelloBlazorHybrid\Services\obj\Debug\net5.0\Services.AssemblyInfo.cs
+D:\NET\Fusion\HelloBlazorHybrid\Services\obj\Debug\net5.0\Services.csproj.CoreCompileInputs.cache
+D:\NET\Fusion\HelloBlazorHybrid\Services\obj\Debug\net5.0\Services.csproj.CopyComplete
+D:\NET\Fusion\HelloBlazorHybrid\Services\obj\Debug\net5.0\HelloBlazorHybrid.Services.dll
+D:\NET\Fusion\HelloBlazorHybrid\Services\obj\Debug\net5.0\ref\HelloBlazorHybrid.Services.dll
+D:\NET\Fusion\HelloBlazorHybrid\Services\obj\Debug\net5.0\HelloBlazorHybrid.Services.pdb

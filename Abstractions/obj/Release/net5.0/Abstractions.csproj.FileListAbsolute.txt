@@ -1,0 +1,12 @@
+D:\NET\Fusion\HelloBlazorHybrid\Abstractions\bin\Release\net5.0\HelloBlazorHybrid.Abstractions.deps.json
+D:\NET\Fusion\HelloBlazorHybrid\Abstractions\bin\Release\net5.0\HelloBlazorHybrid.Abstractions.dll
+D:\NET\Fusion\HelloBlazorHybrid\Abstractions\bin\Release\net5.0\ref\HelloBlazorHybrid.Abstractions.dll
+D:\NET\Fusion\HelloBlazorHybrid\Abstractions\bin\Release\net5.0\HelloBlazorHybrid.Abstractions.pdb
+D:\NET\Fusion\HelloBlazorHybrid\Abstractions\obj\Release\net5.0\Abstractions.csprojAssemblyReference.cache
+D:\NET\Fusion\HelloBlazorHybrid\Abstractions\obj\Release\net5.0\Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+D:\NET\Fusion\HelloBlazorHybrid\Abstractions\obj\Release\net5.0\Abstractions.AssemblyInfoInputs.cache
+D:\NET\Fusion\HelloBlazorHybrid\Abstractions\obj\Release\net5.0\Abstractions.AssemblyInfo.cs
+D:\NET\Fusion\HelloBlazorHybrid\Abstractions\obj\Release\net5.0\Abstractions.csproj.CoreCompileInputs.cache
+D:\NET\Fusion\HelloBlazorHybrid\Abstractions\obj\Release\net5.0\HelloBlazorHybrid.Abstractions.dll
+D:\NET\Fusion\HelloBlazorHybrid\Abstractions\obj\Release\net5.0\ref\HelloBlazorHybrid.Abstractions.dll
+D:\NET\Fusion\HelloBlazorHybrid\Abstractions\obj\Release\net5.0\HelloBlazorHybrid.Abstractions.pdb
