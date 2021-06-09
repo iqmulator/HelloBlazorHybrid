@@ -20,6 +20,7 @@ namespace HelloBlazorHybrid.Server.Controllers
             return _counter.Get(cancellationToken);
         }
 
+        [HttpPost]
         public Task Increment(CancellationToken cancellationToken = default)
         {
             return _counter.Increment(cancellationToken);

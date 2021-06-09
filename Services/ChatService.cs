@@ -5,26 +5,20 @@ using System.Reactive;
 using System.Threading;
 using System.Threading.Tasks;
 using Stl.Async;
-using Stl.CommandR;
 using Stl.CommandR.Configuration;
 using Stl.Fusion;
 
 namespace HelloBlazorHybrid.Abstractions
 {
-    public class ChatService
+    public class ChatService : IChatService
     {
-        public record PostCommand(string Name, string Message) : ICommand<Unit>
-        {
-            // Default constructor is needed for JSON deserialization
-            public PostCommand() : this(null!, null!) { }
-        }
-
         private volatile ImmutableList<(DateTime Time, string Name, string Message)> _messages =
             ImmutableList<(DateTime, string, string)>.Empty;
+        
         private readonly object _lock = new();
-
+        
         [CommandHandler]
-        public virtual Task PostMessageAsync(PostCommand command, CancellationToken cancellationToken = default)
+        public virtual Task PostMessageAsync(IChatService.PostCommand command, CancellationToken cancellationToken = default)
         {
             if (Computed.IsInvalidating()) {
                 GetMessageCountAsync().Ignore();
@@ -53,6 +47,6 @@ namespace HelloBlazorHybrid.Abstractions
         }
 
         [ComputeMethod]
-        protected virtual Task<Unit> GetAnyTailAsync() => TaskEx.UnitTask;
+        public virtual Task<Unit> GetAnyTailAsync() => TaskEx.UnitTask;
     }
 }

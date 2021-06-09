@@ -100,3 +100,7 @@ D:\NET\Fusion\HelloBlazorHybrid\Server\obj\Debug\net5.0\HelloBlazorHybrid.Server
 D:\NET\Fusion\HelloBlazorHybrid\Server\obj\Debug\net5.0\ref\HelloBlazorHybrid.Server.dll
 D:\NET\Fusion\HelloBlazorHybrid\Server\obj\Debug\net5.0\HelloBlazorHybrid.Server.pdb
 D:\NET\Fusion\HelloBlazorHybrid\Server\obj\Debug\net5.0\Server.genruntimeconfig.cache
+D:\NET\Fusion\HelloBlazorHybrid\Server\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\NET\Fusion\HelloBlazorHybrid\Server\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\NET\Fusion\HelloBlazorHybrid\Server\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\NET\Fusion\HelloBlazorHybrid\Server\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll

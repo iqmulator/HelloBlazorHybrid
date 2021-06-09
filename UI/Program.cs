@@ -58,6 +58,7 @@ namespace HelloBlazorHybrid.UI
             //Fusion services
             fusionClient.AddReplicaService<ICounterService, ICounterClient>();
             fusionClient.AddReplicaService<IWeatherForecastService, IWeatherForecastClient>();
+            fusionClient.AddReplicaService<IChatService, IChatClient>();
 
             ConfigureSharedServices(services);
         }

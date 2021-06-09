@@ -16,6 +16,8 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.extensions.apidescription.server\3.0.0\build\Microsoft.Extensions.ApiDescription.Server.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.apidescription.server\3.0.0\build\Microsoft.Extensions.ApiDescription.Server.props')" />
+    <Import Project="$(NuGetPackageRoot)swashbuckle.aspnetcore\6.1.4\build\Swashbuckle.AspNetCore.props" Condition="Exists('$(NuGetPackageRoot)swashbuckle.aspnetcore\6.1.4\build\Swashbuckle.AspNetCore.props')" />
     <Import Project="$(NuGetPackageRoot)stl.fusion.blazor\1.2.1\buildTransitive\Stl.Fusion.Blazor.props" Condition="Exists('$(NuGetPackageRoot)stl.fusion.blazor\1.2.1\buildTransitive\Stl.Fusion.Blazor.props')" />
     <Import Project="$(NuGetPackageRoot)blazorise\0.9.3.7\buildTransitive\Blazorise.props" Condition="Exists('$(NuGetPackageRoot)blazorise\0.9.3.7\buildTransitive\Blazorise.props')" />
     <Import Project="$(NuGetPackageRoot)blazorise.sidebar\0.9.3.7\buildTransitive\Blazorise.Sidebar.props" Condition="Exists('$(NuGetPackageRoot)blazorise.sidebar\0.9.3.7\buildTransitive\Blazorise.Sidebar.props')" />
@@ -23,6 +25,7 @@
     <Import Project="$(NuGetPackageRoot)blazorise.bootstrap\0.9.3.7\buildTransitive\Blazorise.Bootstrap.props" Condition="Exists('$(NuGetPackageRoot)blazorise.bootstrap\0.9.3.7\buildTransitive\Blazorise.Bootstrap.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\Andrey\.nuget\packages\microsoft.extensions.apidescription.server\3.0.0</PkgMicrosoft_Extensions_ApiDescription_Server>
     <PkgMicrosoft_AspNetCore_Components_WebAssembly_Server Condition=" '$(PkgMicrosoft_AspNetCore_Components_WebAssembly_Server)' == '' ">C:\Users\Andrey\.nuget\packages\microsoft.aspnetcore.components.webassembly.server\5.0.6</PkgMicrosoft_AspNetCore_Components_WebAssembly_Server>
   </PropertyGroup>
 </Project>

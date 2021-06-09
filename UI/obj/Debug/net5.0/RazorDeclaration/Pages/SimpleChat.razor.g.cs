@@ -189,13 +189,6 @@ using HelloBlazorHybrid.Abstractions;
 #nullable disable
 #nullable restore
 #line 4 "D:\NET\Fusion\HelloBlazorHybrid\UI\Pages\SimpleChat.razor"
-using Stl.Async;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 5 "D:\NET\Fusion\HelloBlazorHybrid\UI\Pages\SimpleChat.razor"
 using Stl.Fusion.Extensions;
 
 #line default
@@ -210,14 +203,14 @@ using Stl.Fusion.Extensions;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 56 "D:\NET\Fusion\HelloBlazorHybrid\UI\Pages\SimpleChat.razor"
+#line 55 "D:\NET\Fusion\HelloBlazorHybrid\UI\Pages\SimpleChat.razor"
        
     private string Name { get; set; } = "Neo";
     private string Message { get; set; } = "Red, please.";
 
     protected override async Task OnInitializedAsync()
         => await State.Update();
-
+    
     protected override async Task<(string Name, string Message, string Time)[]> ComputeState(CancellationToken cancellationToken)
     {
         var messages = await Chat.GetMessagesAsync(20, cancellationToken);
@@ -243,7 +236,7 @@ using Stl.Fusion.Extensions;
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager Navigator { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IFusionTime Time { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ChatService Chat { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IChatService Chat { get; set; }
     }
 }
 #pragma warning restore 1591

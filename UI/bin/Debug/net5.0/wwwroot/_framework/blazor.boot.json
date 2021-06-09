@@ -235,15 +235,15 @@
       "mscorlib.dll": "sha256-Fi+LybwHL\/VGD\/09OxxtYlT6exn9xVU+LdojZ9juR2c=",
       "netstandard.dll": "sha256-P8xX0ad1hKyWWbBxiXl3cYokFlDiuXwp3pqoYatH0kk=",
       "System.Private.CoreLib.dll": "sha256-2km83sNUTrumGJYdDzsN8RnJqv00vKWLCCh0UGajTB4=",
-      "HelloBlazorHybrid.Abstractions.dll": "sha256-UUpIMrJUlxPErFWe5gLpIpYzwb0NtRyZIAtvfy+Aaac=",
-      "HelloBlazorHybrid.Services.dll": "sha256-hH9S+lxDr3fjzfwbDkHbkE7tpi7zDiBYmmr\/+Gj0A4Y=",
-      "HelloBlazorHybrid.UI.dll": "sha256-zgxu838hFOaOO0ArC5+TYR4m+p3MhSHM8rfZsP4chAk="
+      "HelloBlazorHybrid.Abstractions.dll": "sha256-qNusp7xLaLwcnvHrsZrShYwaPq\/r\/+fKbPpNWsNV0kw=",
+      "HelloBlazorHybrid.Services.dll": "sha256-h+hTK2CF2B\/XGAy9TGo\/yXbVCI1x6kSlGsPnbM0jxjc=",
+      "HelloBlazorHybrid.UI.dll": "sha256-kyMuhxJUEMPhyXfj7TCeOCNEk2eP53hUGIC5i5QvS+A="
     },
     "lazyAssembly": null,
     "pdb": {
-      "HelloBlazorHybrid.Abstractions.pdb": "sha256-lpDPKv321aO9DetPEaREJOrIwae4fcF2txtnBEWvpAc=",
-      "HelloBlazorHybrid.Services.pdb": "sha256-nw3ymRhLHSZTgnT7zjA3foUJp++n5YIdExgay+FWQc4=",
-      "HelloBlazorHybrid.UI.pdb": "sha256-W1yc3IEXtjT5XwO6csHTNDyY9ubvj1CbZZ\/xRHn1b08="
+      "HelloBlazorHybrid.Abstractions.pdb": "sha256-rm7YQWYeeUquWQ7JEq\/h4phKsyJqVoNgFQkGJIxdY2M=",
+      "HelloBlazorHybrid.Services.pdb": "sha256-b7yVQlZPBIHvMbMBQZhOamCByQZPBEF1ltY9bWz9kIg=",
+      "HelloBlazorHybrid.UI.pdb": "sha256-AzVkRGjYJiDH+1P+nJg44s+OG890yDZGoOlYnzcSmKU="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-ibxaSjW7s3aLVssChknhzCpgMTHGu4D48Q9OLP3dfe8=",

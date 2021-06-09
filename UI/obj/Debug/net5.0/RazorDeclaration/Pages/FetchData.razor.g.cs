@@ -200,10 +200,9 @@ using HelloBlazorHybrid.Abstractions;
        
     protected override void ConfigureMutableState(MutableState<DateTime>.Options options)
         => options.InitialOutputFactory = _ => DateTime.Today;
-    
-    [ComputeMethod(AutoInvalidateTime = 1)]
-    protected override Task<WeatherForecast[]> ComputeState(CancellationToken cancellationToken)
-        => WeatherForecast.GetForecastAsync(MutableState.ValueOrDefault, cancellationToken);
+
+    protected override async Task<WeatherForecast[]> ComputeState(CancellationToken cancellationToken)
+        => await WeatherForecast.GetForecastAsync(MutableState.Value, cancellationToken);
 
 #line default
 #line hidden

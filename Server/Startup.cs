@@ -1,85 +1,12 @@
-// using Microsoft.AspNetCore.Builder;
-// using Microsoft.AspNetCore.Hosting;
-// using Microsoft.Extensions.Configuration;
-// using Microsoft.Extensions.DependencyInjection;
-// using Microsoft.Extensions.Hosting;
-// using Stl.Fusion;
-// using Stl.Fusion.Extensions;
-//
-// namespace HelloBlazorHybrid.Server
-// {
-//     public class Startup
-//     {
-//         public Startup(IConfiguration configuration)
-//         {
-//             Configuration = configuration;
-//         }
-//
-//         public IConfiguration Configuration { get; }
-//
-//         // This method gets called by the runtime. Use this method to add services to the container.
-//         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
-//         public void ConfigureServices(IServiceCollection services)
-//         {
-//             // Fusion service
-//             var fusion = services.AddFusion();
-//             fusion.AddFusionTime(); // IFusionTime is one of built-in compute services you can use
-//             // fusion.AddComputeService<CounterService>();
-//             // fusion.AddComputeService<ChatService>();
-//             // fusion.AddComputeService<ChatBotService>();
-//
-//             // This is just to make sure ChatBotService.StartAsync is called on startup
-//             // services.AddHostedService(c => c.GetRequiredService<ChatBotService>());
-//
-//             // Default update delay is 0.5s
-//             services.AddTransient<IUpdateDelayer>(_ => new UpdateDelayer(0.5));
-//
-//             // Web
-//             services.AddRazorPages();
-//             services.AddServerSideBlazor();
-//         }
-//
-//         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-//         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-//         {
-//             if (env.IsDevelopment())
-//             {
-//                 app.UseDeveloperExceptionPage();
-//             }
-//             else
-//             {
-//                 app.UseExceptionHandler("/Error");
-//                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-//                 app.UseHsts();
-//             }
-//
-//             app.UseHttpsRedirection();
-//             app.UseStaticFiles();
-//
-//             app.UseRouting();
-//
-//             app.UseEndpoints(endpoints =>
-//             {
-//                 endpoints.MapBlazorHub();
-//                 endpoints.MapFallbackToPage("/_Host");
-//             });
-//         }
-//     }
-// }
-
-
 using System;
 using System.IO;
 using System.Reflection;
 using System.Text.RegularExpressions;
 using HelloBlazorHybrid.Abstractions;
 using HelloBlazorHybrid.Services;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.MicrosoftAccount;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Hosting.StaticWebAssets;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -87,12 +14,14 @@ using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
+using Microsoft.OpenApi.Models;
 using Stl.DependencyInjection;
 using Stl.Fusion;
 using Stl.Fusion.Authentication;
 using Stl.Fusion.Blazor;
 using Stl.Fusion.Bridge;
 using Stl.Fusion.Client;
+using Stl.Fusion.Extensions;
 using Stl.Fusion.Server;
 
 namespace HelloBlazorHybrid.Server
@@ -127,7 +56,7 @@ namespace HelloBlazorHybrid.Server
 
             // Creating Log and ServerSettings as early as possible
             services.AddSettings<ServerSettings>("Server");
-            services.AddSettings<BlazorModeHelper>();
+            
 #pragma warning disable ASP0000
             var tmpServices = services.BuildServiceProvider();
 #pragma warning restore ASP0000
@@ -135,7 +64,7 @@ namespace HelloBlazorHybrid.Server
             ServerSettings = tmpServices.GetRequiredService<ServerSettings>();
 
             // Fusion
-            var fusion = services.AddFusion();
+            var fusion = services.AddFusion().AddFusionTime();
             var fusionClient = fusion.AddRestEaseClient();
             var fusionServer = fusion.AddWebServer();
             services.AddSingleton(new Publisher.Options() { Id = ServerSettings.PublisherId });
@@ -145,6 +74,10 @@ namespace HelloBlazorHybrid.Server
             // Fusion services
             fusion.AddComputeService<ICounterService, CounterService>();
             fusion.AddComputeService<IWeatherForecastService, WeatherForecastService>();
+            fusion.AddComputeService<IChatService, ChatService>();
+            fusion.AddComputeService<ChatBotService>();
+            
+            services.AddHostedService(c => c.GetRequiredService<ChatBotService>());
 
             // Shared UI services
             UI.Program.ConfigureSharedServices(services);
@@ -158,6 +91,13 @@ namespace HelloBlazorHybrid.Server
             services.AddRouting();
             services.AddMvc().AddApplicationPart(Assembly.GetExecutingAssembly());
             services.AddServerSideBlazor(o => o.DetailedErrors = true);
+            
+            // Swagger & debug tools
+            services.AddSwaggerGen(c => {
+                c.SwaggerDoc("v1", new OpenApiInfo {
+                    Title = "Samples.Blazor.Server API", Version = "v1"
+                });
+            });
         }
 
         public void Configure(IApplicationBuilder app, ILogger<Startup> log)
@@ -201,11 +141,14 @@ namespace HelloBlazorHybrid.Server
             app.UseWebSockets(new WebSocketOptions() {
                 KeepAliveInterval = TimeSpan.FromSeconds(30),
             });
-            // app.UseFusionSession();
 
             // Static + Swagger
             app.UseBlazorFrameworkFiles();
             app.UseStaticFiles();
+            app.UseSwagger();
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1");
+            });
 
             // API controllers
             app.UseRouting();

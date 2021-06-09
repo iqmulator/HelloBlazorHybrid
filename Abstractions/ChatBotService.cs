@@ -26,9 +26,9 @@ namespace HelloBlazorHybrid.Abstractions
         private static string TimeBot = "Time Bot";
         private static readonly HashSet<string> BotNames = new() {Morpheus, Groot, TimeBot};
 
-        private readonly ChatService _chatService;
+        private readonly IChatService _chatService;
 
-        public ChatBotService(ChatService chatService)
+        public ChatBotService(IChatService chatService)
             => _chatService = chatService;
 
         public async Task StartAsync(CancellationToken cancellationToken)
@@ -36,7 +36,7 @@ namespace HelloBlazorHybrid.Abstractions
         public Task StopAsync(CancellationToken cancellationToken) => Task.CompletedTask;
 
         [CommandHandler(Priority = 1, IsFilter = true)]
-        protected virtual async Task OnChatPost(ChatService.PostCommand command, CancellationToken cancellationToken)
+        protected virtual async Task OnChatPost(IChatService.PostCommand command, CancellationToken cancellationToken)
         {
             await CommandContext.GetCurrent().InvokeRemainingHandlers(cancellationToken);
             if (Computed.IsInvalidating()) {
@@ -49,7 +49,7 @@ namespace HelloBlazorHybrid.Abstractions
             }
         }
 
-        protected virtual async Task Reaction(ChatService.PostCommand command, CancellationToken cancellationToken)
+        protected virtual async Task Reaction(IChatService.PostCommand command, CancellationToken cancellationToken)
         {
             var messageCount = await _chatService.GetMessageCountAsync();
             switch (messageCount) {

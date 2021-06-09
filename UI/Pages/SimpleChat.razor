@@ -1,10 +1,9 @@
 ﻿@page "/simpleChat"
 @using System.Threading
 @using HelloBlazorHybrid.Abstractions
-@using Stl.Async
 @using Stl.Fusion.Extensions
 @inherits ComputedStateComponent<(string Name, string Message, string Time)[]>
-@inject ChatService Chat
+@inject IChatService Chat
 @inject IFusionTime Time
 @inject NavigationManager Navigator
 
@@ -59,7 +58,7 @@
 
     protected override async Task OnInitializedAsync()
         => await State.Update();
-
+    
     protected override async Task<(string Name, string Message, string Time)[]> ComputeState(CancellationToken cancellationToken)
     {
         var messages = await Chat.GetMessagesAsync(20, cancellationToken);
