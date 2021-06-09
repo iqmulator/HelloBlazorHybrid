@@ -142,7 +142,7 @@
           "lib/netstandard1.5/Castle.Core.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Authentication.MicrosoftAccount/5.0.6": {
+      "Microsoft.AspNetCore.Authentication.MicrosoftAccount/5.0.7": {
         "type": "package",
         "compile": {
           "lib/net5.0/Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll": {}
@@ -247,7 +247,7 @@
           "build/net5.0/_._": {}
         }
       },
-      "Microsoft.AspNetCore.Components.WebAssembly.Server/5.0.6": {
+      "Microsoft.AspNetCore.Components.WebAssembly.Server/5.0.7": {
         "type": "package",
         "compile": {
           "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.Server.dll": {}
@@ -262,7 +262,7 @@
           "build/Microsoft.AspNetCore.Components.WebAssembly.Server.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Cryptography.Internal/5.0.6": {
+      "Microsoft.AspNetCore.Cryptography.Internal/5.0.7": {
         "type": "package",
         "compile": {
           "lib/net5.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {}
@@ -271,11 +271,11 @@
           "lib/net5.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {}
         }
       },
-      "Microsoft.AspNetCore.DataProtection/5.0.6": {
+      "Microsoft.AspNetCore.DataProtection/5.0.7": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Cryptography.Internal": "5.0.6",
-          "Microsoft.AspNetCore.DataProtection.Abstractions": "5.0.6",
+          "Microsoft.AspNetCore.Cryptography.Internal": "5.0.7",
+          "Microsoft.AspNetCore.DataProtection.Abstractions": "5.0.7",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
           "Microsoft.Extensions.Hosting.Abstractions": "5.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "5.0.0",
@@ -290,7 +290,7 @@
           "lib/net5.0/Microsoft.AspNetCore.DataProtection.dll": {}
         }
       },
-      "Microsoft.AspNetCore.DataProtection.Abstractions/5.0.6": {
+      "Microsoft.AspNetCore.DataProtection.Abstractions/5.0.7": {
         "type": "package",
         "compile": {
           "lib/net5.0/Microsoft.AspNetCore.DataProtection.Abstractions.dll": {}
@@ -299,11 +299,11 @@
           "lib/net5.0/Microsoft.AspNetCore.DataProtection.Abstractions.dll": {}
         }
       },
-      "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore/5.0.6": {
+      "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore/5.0.7": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.DataProtection": "5.0.6",
-          "Microsoft.EntityFrameworkCore": "5.0.6"
+          "Microsoft.AspNetCore.DataProtection": "5.0.7",
+          "Microsoft.EntityFrameworkCore": "5.0.7"
         },
         "compile": {
           "lib/netstandard2.1/Microsoft.AspNetCore.DataProtection.EntityFrameworkCore.dll": {}
@@ -312,7 +312,7 @@
           "lib/netstandard2.1/Microsoft.AspNetCore.DataProtection.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.AspNetCore.JsonPatch/5.0.6": {
+      "Microsoft.AspNetCore.JsonPatch/5.0.7": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
@@ -334,10 +334,10 @@
           "lib/net5.0/Microsoft.AspNetCore.Metadata.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Mvc.NewtonsoftJson/5.0.6": {
+      "Microsoft.AspNetCore.Mvc.NewtonsoftJson/5.0.7": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.JsonPatch": "5.0.6",
+          "Microsoft.AspNetCore.JsonPatch": "5.0.7",
           "Newtonsoft.Json": "12.0.2",
           "Newtonsoft.Json.Bson": "1.0.2"
         },
@@ -360,11 +360,11 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore/5.0.6": {
+      "Microsoft.EntityFrameworkCore/5.0.7": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "5.0.6",
-          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.6",
+          "Microsoft.EntityFrameworkCore.Abstractions": "5.0.7",
+          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.7",
           "Microsoft.Extensions.Caching.Memory": "5.0.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.1",
           "Microsoft.Extensions.Logging": "5.0.0",
@@ -379,7 +379,7 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/5.0.6": {
+      "Microsoft.EntityFrameworkCore.Abstractions/5.0.7": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
@@ -388,7 +388,7 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/5.0.6": {
+      "Microsoft.EntityFrameworkCore.Analyzers/5.0.7": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -2946,10 +2946,10 @@
         "readme.txt"
       ]
     },
-    "Microsoft.AspNetCore.Authentication.MicrosoftAccount/5.0.6": {
-      "sha512": "eG8l7Dv1lhXS6w5nsvu/+qdcFWFViIo9Fw699bmJWVyLlrgNgSbUqCiIaKDtyTbiVL/e4PR26z5kE59XxCpQ5g==",
+    "Microsoft.AspNetCore.Authentication.MicrosoftAccount/5.0.7": {
+      "sha512": "KFc66x5aG4qM//DcxrZ3/fWAiv/REwL1aaUro15QrtPpxAgHmezblrNQwdAfHOLsj2B81qNa0/dZnl6AAGJe+w==",
       "type": "package",
-      "path": "microsoft.aspnetcore.authentication.microsoftaccount/5.0.6",
+      "path": "microsoft.aspnetcore.authentication.microsoftaccount/5.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2957,7 +2957,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net5.0/Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll",
         "lib/net5.0/Microsoft.AspNetCore.Authentication.MicrosoftAccount.xml",
-        "microsoft.aspnetcore.authentication.microsoftaccount.5.0.6.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.microsoftaccount.5.0.7.nupkg.sha512",
         "microsoft.aspnetcore.authentication.microsoftaccount.nuspec"
       ]
     },
@@ -3073,10 +3073,10 @@
         "microsoft.aspnetcore.components.webassembly.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.WebAssembly.Server/5.0.6": {
-      "sha512": "DYWDtUPf2J0+PfHVArjGeTmU2dUlgJSmVATCK22L/E3U732m1mU+6+3IKcY47DeXUUmlxPCPnGBRXIixZ9LF+Q==",
+    "Microsoft.AspNetCore.Components.WebAssembly.Server/5.0.7": {
+      "sha512": "dCg5hZHqLBDebnFacUmgKw2tSQ/apl/RSHHjOUjF3suNlqopMcPVTqZ//0Lrh7UmlKS2C0j71yB6B/dR1axIsw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.webassembly.server/5.0.6",
+      "path": "microsoft.aspnetcore.components.webassembly.server/5.0.7",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -3086,7 +3086,7 @@
         "build/Microsoft.AspNetCore.Components.WebAssembly.Server.targets",
         "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.Server.dll",
         "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.Server.xml",
-        "microsoft.aspnetcore.components.webassembly.server.5.0.6.nupkg.sha512",
+        "microsoft.aspnetcore.components.webassembly.server.5.0.7.nupkg.sha512",
         "microsoft.aspnetcore.components.webassembly.server.nuspec",
         "tools/BlazorDebugProxy/BrowserDebugHost.dll",
         "tools/BlazorDebugProxy/BrowserDebugHost.runtimeconfig.json",
@@ -3099,10 +3099,10 @@
         "tools/BlazorDebugProxy/Newtonsoft.Json.dll"
       ]
     },
-    "Microsoft.AspNetCore.Cryptography.Internal/5.0.6": {
-      "sha512": "iJYBphYXA0BLEzVwJDFpYuWN9yrZkPZIrOoHKthLuAA3pbv2rBRrDgiTp244ZQ8LGLVUa11VOBDncmFexZuhCg==",
+    "Microsoft.AspNetCore.Cryptography.Internal/5.0.7": {
+      "sha512": "Dy1QDtoi+GqacAtALy70Mvl/T2p62b0tIautob4aAXYztBr1Ag/ibn+dn2uRtZgMry7nokKmjs2thC0ta6ookw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.cryptography.internal/5.0.6",
+      "path": "microsoft.aspnetcore.cryptography.internal/5.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3114,14 +3114,14 @@
         "lib/net5.0/Microsoft.AspNetCore.Cryptography.Internal.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.xml",
-        "microsoft.aspnetcore.cryptography.internal.5.0.6.nupkg.sha512",
+        "microsoft.aspnetcore.cryptography.internal.5.0.7.nupkg.sha512",
         "microsoft.aspnetcore.cryptography.internal.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.DataProtection/5.0.6": {
-      "sha512": "sRr17geqqRloSjP/zpGrbl2spLZGpjzvZC8PaUqYR7zjYnDhSdGt2wB/fwoU6m6+IhwK5ca1PJrVuHEd/UIS0A==",
+    "Microsoft.AspNetCore.DataProtection/5.0.7": {
+      "sha512": "pvwzGWNGSxmI6HyMIztX9AonTVO7JR0iRF8V0CwEM11i9r3b8UKlhGQPstZEgAtJro8ST8Kbm36z7LQWS5HDYw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.dataprotection/5.0.6",
+      "path": "microsoft.aspnetcore.dataprotection/5.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3133,14 +3133,14 @@
         "lib/net5.0/Microsoft.AspNetCore.DataProtection.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.DataProtection.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.DataProtection.xml",
-        "microsoft.aspnetcore.dataprotection.5.0.6.nupkg.sha512",
+        "microsoft.aspnetcore.dataprotection.5.0.7.nupkg.sha512",
         "microsoft.aspnetcore.dataprotection.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.DataProtection.Abstractions/5.0.6": {
-      "sha512": "39czXs/xis23aE+BTbJDOyk75OvWFyw543m0idvcmovx2Yoo0J/EC1Z7K0ND3ZwkIuMONRQL75fMgKyhdV3Bkg==",
+    "Microsoft.AspNetCore.DataProtection.Abstractions/5.0.7": {
+      "sha512": "W6tYeqgIBtcSwx/v3X8k0lm6ZxAaX3jUsVpnGW6jwbkcPxL+vuZKjlVrLMPZzjl8Ety95jOGsC0rHrxsePbiRQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.dataprotection.abstractions/5.0.6",
+      "path": "microsoft.aspnetcore.dataprotection.abstractions/5.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3152,14 +3152,14 @@
         "lib/net5.0/Microsoft.AspNetCore.DataProtection.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.DataProtection.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.DataProtection.Abstractions.xml",
-        "microsoft.aspnetcore.dataprotection.abstractions.5.0.6.nupkg.sha512",
+        "microsoft.aspnetcore.dataprotection.abstractions.5.0.7.nupkg.sha512",
         "microsoft.aspnetcore.dataprotection.abstractions.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore/5.0.6": {
-      "sha512": "y6z08ZVW7hqGbggswOuaCYccGBE+mk80FNL66GqFSsAKbK6Gl03UaxahT2TphMoxDhEmBdoMyy8C/6kc6O81Kw==",
+    "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore/5.0.7": {
+      "sha512": "iW4Cq0lMSMHIOFK0IdxWQ+u2IEIogyyct1E8qwW3XauKNse6bZ0cBuR+Xo6FzhsL3YCLcCdWLo5Qdr43+H0ZuA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.dataprotection.entityframeworkcore/5.0.6",
+      "path": "microsoft.aspnetcore.dataprotection.entityframeworkcore/5.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3167,14 +3167,14 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard2.1/Microsoft.AspNetCore.DataProtection.EntityFrameworkCore.dll",
         "lib/netstandard2.1/Microsoft.AspNetCore.DataProtection.EntityFrameworkCore.xml",
-        "microsoft.aspnetcore.dataprotection.entityframeworkcore.5.0.6.nupkg.sha512",
+        "microsoft.aspnetcore.dataprotection.entityframeworkcore.5.0.7.nupkg.sha512",
         "microsoft.aspnetcore.dataprotection.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.JsonPatch/5.0.6": {
-      "sha512": "mLVtFR/wxJaWeHxBm7S+WoDGcYfE3Q9Tkf6m/BWzaZn2fWuTl3ojY3m6rDIBkPj2hGcgBvCnVmyYH5R2fkN+Aw==",
+    "Microsoft.AspNetCore.JsonPatch/5.0.7": {
+      "sha512": "IMindTqVCOLpY8uoDuZTOlzJyTDKMt8p6OAdlXMC9XFcGn80BW5VS3t+729p/+tW/lafxAS0cnrrklM59QfdYg==",
       "type": "package",
-      "path": "microsoft.aspnetcore.jsonpatch/5.0.6",
+      "path": "microsoft.aspnetcore.jsonpatch/5.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3184,7 +3184,7 @@
         "lib/net461/Microsoft.AspNetCore.JsonPatch.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.xml",
-        "microsoft.aspnetcore.jsonpatch.5.0.6.nupkg.sha512",
+        "microsoft.aspnetcore.jsonpatch.5.0.7.nupkg.sha512",
         "microsoft.aspnetcore.jsonpatch.nuspec"
       ]
     },
@@ -3207,10 +3207,10 @@
         "microsoft.aspnetcore.metadata.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Mvc.NewtonsoftJson/5.0.6": {
-      "sha512": "q4Z1EiWGJP8TYXU26sUX6NoBoUXK0FIwKS00I1kNt1B3mYCtSyEvxE8bbjxNfa0psFhVpbNrr0M0hS5sHMgQ6A==",
+    "Microsoft.AspNetCore.Mvc.NewtonsoftJson/5.0.7": {
+      "sha512": "iEiVcGFcj8GZUB9dLoVg2/Z4B5kORXyE6cdoo5EVPao0h0laZltcw5rSx0LwfLLBR253HjMGz3SYeiGZ5bC2Xw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.mvc.newtonsoftjson/5.0.6",
+      "path": "microsoft.aspnetcore.mvc.newtonsoftjson/5.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3218,7 +3218,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net5.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll",
         "lib/net5.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.xml",
-        "microsoft.aspnetcore.mvc.newtonsoftjson.5.0.6.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.newtonsoftjson.5.0.7.nupkg.sha512",
         "microsoft.aspnetcore.mvc.newtonsoftjson.nuspec"
       ]
     },
@@ -3291,45 +3291,45 @@
         "version.txt"
       ]
     },
-    "Microsoft.EntityFrameworkCore/5.0.6": {
-      "sha512": "uEqAprroH469aPCZm4iPA1oD8/YDqEQT9QjINkq4HWFA2kRh7Dm2lXX4uZ4MAzpcxoWCqKni2KbLqG8I0KnGqw==",
+    "Microsoft.EntityFrameworkCore/5.0.7": {
+      "sha512": "VAvmiQPdw0PUh3X7k9k7haVnCfQuDgyki9rq5XVk0gXJFeh+bwqPzPrY71A08O5TjnIeK9lEggXDnMuhQXUUww==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore/5.0.6",
+      "path": "microsoft.entityframeworkcore/5.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.dll",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.5.0.6.nupkg.sha512",
+        "microsoft.entityframeworkcore.5.0.7.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/5.0.6": {
-      "sha512": "mZCwrwaiE3dSfJZZLihPueGJ2L5/vPU8VPpz21lErYIMmtZmxfSqocXe65bLlwMQ6EO/OcW7P+tvHWPsrAzMTg==",
+    "Microsoft.EntityFrameworkCore.Abstractions/5.0.7": {
+      "sha512": "MM5M9vYDLUXCePUGN2WZ0MkNcNj74sIgyVR9v7tW6abRULtBWPcyZf6zLYhZYpRgPXcahcME+Koscz9kP2DxyA==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.abstractions/5.0.6",
+      "path": "microsoft.entityframeworkcore.abstractions/5.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.xml",
-        "microsoft.entityframeworkcore.abstractions.5.0.6.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.5.0.7.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/5.0.6": {
-      "sha512": "PhcaRr/5NgTVjm43ITSPSYQGYCUkyuBV1gEDipLnDZI+VsYwyr2HH8pHXDUaY1E6dkZoiWNRt+XNMAsK3qDIKQ==",
+    "Microsoft.EntityFrameworkCore.Analyzers/5.0.7": {
+      "sha512": "ZShPEOZaQhBZqDObU3+kigEmlEGug37F8v/jpQgVs1XfHrLeXVyk+p94DBH4f+bUUHUbsEEcIbU6OhUBtWZztg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/5.0.6",
+      "path": "microsoft.entityframeworkcore.analyzers/5.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.analyzers.5.0.6.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.5.0.7.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
@@ -8784,10 +8784,10 @@
       "AspNet.Security.OAuth.GitHub >= 5.0.6",
       "HelloBlazorHybrid.Services >= 1.0.0",
       "HelloBlazorHybrid.UI >= 1.0.0",
-      "Microsoft.AspNetCore.Authentication.MicrosoftAccount >= 5.0.6",
-      "Microsoft.AspNetCore.Components.WebAssembly.Server >= 5.0.6",
-      "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore >= 5.0.6",
-      "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 5.0.6",
+      "Microsoft.AspNetCore.Authentication.MicrosoftAccount >= 5.0.7",
+      "Microsoft.AspNetCore.Components.WebAssembly.Server >= 5.0.7",
+      "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore >= 5.0.7",
+      "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 5.0.7",
       "Stl.Fusion.EntityFramework >= 1.2.1",
       "Stl.Fusion.Server >= 1.2.1",
       "Swashbuckle.AspNetCore >= 6.1.4"
@@ -8852,19 +8852,19 @@
           },
           "Microsoft.AspNetCore.Authentication.MicrosoftAccount": {
             "target": "Package",
-            "version": "[5.0.6, )"
+            "version": "[5.0.7, )"
           },
           "Microsoft.AspNetCore.Components.WebAssembly.Server": {
             "target": "Package",
-            "version": "[5.0.6, )"
+            "version": "[5.0.7, )"
           },
           "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": {
             "target": "Package",
-            "version": "[5.0.6, )"
+            "version": "[5.0.7, )"
           },
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
             "target": "Package",
-            "version": "[5.0.6, )"
+            "version": "[5.0.7, )"
           },
           "Stl.Fusion.EntityFramework": {
             "target": "Package",

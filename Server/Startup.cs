@@ -152,8 +152,6 @@ namespace HelloBlazorHybrid.Server
 
             // API controllers
             app.UseRouting();
-            // app.UseAuthentication();
-            // app.UseAuthorization();
             app.UseEndpoints(endpoints => {
                 endpoints.MapBlazorHub();
                 endpoints.MapFusionWebSocketServer();

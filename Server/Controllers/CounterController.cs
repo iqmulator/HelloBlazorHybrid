@@ -16,14 +16,10 @@ namespace HelloBlazorHybrid.Server.Controllers
 
         [HttpGet, Publish]
         public Task<int> Get(CancellationToken cancellationToken = default)
-        {
-            return _counter.Get(cancellationToken);
-        }
+            => _counter.Get(cancellationToken);
 
         [HttpPost]
         public Task Increment(CancellationToken cancellationToken = default)
-        {
-            return _counter.Increment(cancellationToken);
-        }
+            => _counter.Increment(cancellationToken);
     }
 }

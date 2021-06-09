@@ -18,8 +18,6 @@ namespace HelloBlazorHybrid.Server.Controllers
         [HttpGet, Publish]
         public Task<WeatherForecast[]> GetForecastAsync(DateTime startDate,
             CancellationToken cancellationToken = default)
-        {
-            return _forecast.GetForecastAsync(startDate, cancellationToken);
-        }
+            => _forecast.GetForecastAsync(startDate, cancellationToken);
     }
 }

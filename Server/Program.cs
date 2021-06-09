@@ -1,9 +1,7 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration.Memory;
-using Microsoft.Extensions.DependencyInjection;
 using HelloBlazorHybrid.Server;
 
 var host = Host.CreateDefaultBuilder()
@@ -22,11 +20,5 @@ var host = Host.CreateDefaultBuilder()
         })
         .UseStartup<Startup>())
     .Build();
-
-// Ensure the DB is created
-// var dbContextFactory = host.Services.GetRequiredService<IDbContextFactory<AppDbContext>>();
-// await using var dbContext = dbContextFactory.CreateDbContext();
-// await dbContext.Database.EnsureDeletedAsync();
-// await dbContext.Database.EnsureCreatedAsync();
 
 await host.RunAsync();

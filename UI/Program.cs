@@ -26,7 +26,6 @@ namespace HelloBlazorHybrid.UI
 
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             ConfigureServices(builder.Services, builder);
-            // builder.RootComponents.Add<App>("#app");
             var host = builder.Build();
 
             host.Services.HostedServices().Start();
