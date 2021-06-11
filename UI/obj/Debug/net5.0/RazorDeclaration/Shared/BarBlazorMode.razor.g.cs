@@ -197,11 +197,25 @@ using System.Web;
 #nullable restore
 #line 15 "D:\NET\Fusion\HelloBlazorHybrid\UI\Shared\BarBlazorMode.razor"
        
+    enum BlazorMode
+    {
+        Server,
+        WASM
+    }
+    
     [Parameter]
     public string CssClass { get; set; } = "";
 
-    private void ChangeMode(bool isServerSideBlazor)
-        => BlazorModeHelper.ChangeMode(isServerSideBlazor);
+    private BlazorMode Mode = BlazorModeHelper.IsServerSideBlazor ? BlazorMode.Server : BlazorMode.WASM;
+
+    private void ChangeDropdownTitle()
+        => Mode = BlazorModeHelper.IsServerSideBlazor ? BlazorMode.Server : BlazorMode.WASM;
+    
+    private void ChangeMode(BlazorMode mode)
+    {
+        BlazorModeHelper.ChangeMode(mode == BlazorMode.Server);
+        ChangeDropdownTitle();
+    }
 
 #line default
 #line hidden

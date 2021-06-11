@@ -207,10 +207,7 @@ using Stl.Fusion.Extensions;
        
      protected override async Task<string> ComputeState(CancellationToken cancellationToken)
      {
-         // var (count, changeTime) = await CounterService.Get();
          var count = await CounterService.Get(cancellationToken);
-         // var momentsAgo = await Time.GetMomentsAgo(changeTime);
-         // return $"{count}, changed {momentsAgo}";
          return $"{count}";
      }
 

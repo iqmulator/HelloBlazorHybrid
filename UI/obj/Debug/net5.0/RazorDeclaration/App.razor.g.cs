@@ -181,7 +181,7 @@ using Stl.Serialization;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 15 "D:\NET\Fusion\HelloBlazorHybrid\UI\App.razor"
+#line 14 "D:\NET\Fusion\HelloBlazorHybrid\UI\App.razor"
        
     private Theme Theme { get; } = new() { IsGradient = true, IsRounded = false };
 
