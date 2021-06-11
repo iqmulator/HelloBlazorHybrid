@@ -208,12 +208,14 @@ using System.Web;
 
     private BlazorMode Mode = BlazorModeHelper.IsServerSideBlazor ? BlazorMode.Server : BlazorMode.WASM;
 
+    private bool isServerSideBlazor = BlazorModeHelper.IsServerSideBlazor;
+
     private void ChangeDropdownTitle()
         => Mode = BlazorModeHelper.IsServerSideBlazor ? BlazorMode.Server : BlazorMode.WASM;
     
-    private void ChangeMode(BlazorMode mode)
+    private void ChangeMode(bool isServerSideBlazor)
     {
-        BlazorModeHelper.ChangeMode(mode == BlazorMode.Server);
+        BlazorModeHelper.ChangeMode(isServerSideBlazor);
         ChangeDropdownTitle();
     }
 
