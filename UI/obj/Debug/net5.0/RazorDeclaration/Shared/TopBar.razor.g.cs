@@ -173,6 +173,13 @@ using Stl.Serialization;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 1 "D:\NET\Fusion\HelloBlazorHybrid\UI\Shared\TopBar.razor"
+using System.Threading;
+
+#line default
+#line hidden
+#nullable disable
     public partial class TopBar : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
